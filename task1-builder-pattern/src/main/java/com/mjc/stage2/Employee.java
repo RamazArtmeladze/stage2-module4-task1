@@ -35,6 +35,31 @@ public class Employee {
         return carNumber;
     }
 
+    // Reintroduce setters for backward compatibility with the tests
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setCarNumber(String carNumber) {
+        this.carNumber = carNumber;
+    }
+
     public static EmployeeBuilder getBuilder() {
         return new EmployeeBuilder();
     }
